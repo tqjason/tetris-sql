@@ -12,7 +12,7 @@ A complete implementation of Tetris in a SQL query.
 ### Installing
 
 - Requirements:
-  - A PostgreSQL server (tested with versions 10 to 17).
+  - A PostgreSQL server (tested with versions 10 to 18).
   - Python3 with the `psycopg2` extension installed.
   - A terminal. Tested with:
     - Windows Terminal >= v1.22 (previous versions cause the render to flicker)
@@ -24,7 +24,7 @@ A complete implementation of Tetris in a SQL query.
 - Installing everything with Docker:
     - Postgres container:
     ```shell
-    docker run --name pg -p 5432:5432 -d -e POSTGRES_PASSWORD=postgres postgres:16
+    docker run --name pg -p 5432:5432 -d -e POSTGRES_PASSWORD=postgres postgres:18
     ```
 
     - Installing `psycopg2` directly in the `pg` container:
@@ -64,6 +64,10 @@ A complete implementation of Tetris in a SQL query.
 
 
 ## Implementation details
+
+### PGConf.EU Talk
+
+The implementation details of this project have been presented at PGConf.EU 2025. The presentation slides can be viewed at https://nuno-faria.github.io/papers/tetris-sql.pdf.
 
 ### Structure
 
